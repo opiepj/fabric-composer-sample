@@ -1,0 +1,9 @@
+{
+
+  "composer-client-app" : {
+    "connectionProfileName":"defaultProfile",
+    "networkIdentifier":"accenture-network",
+    "enrollmentId":"WebAppAdmin",
+    "enrollmentSecret":"DJY27pEnl16d"
+  }
+}

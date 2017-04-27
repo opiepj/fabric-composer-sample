@@ -1,0 +1,14 @@
+.jumbotron {
+  background-image: url('./hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid;
+  .container {
+    color: #12110f;
+    font-weight: bold;
+  }
+}
+
+img {
+  width: 40%
+}

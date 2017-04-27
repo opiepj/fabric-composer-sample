@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./assets/styles/mixins";
+@import "./assets/styles/variables";
+
+/* needed for sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+/* needed for sticky footer */
+
+.ui-dialog-titlebar {
+  background: $primary !important;
+  color: $textInput;
+  border-bottom:4px solid $outline !important;
+}
+
+ui-dialog-titlebar-icon {
+  background: $textInput;
+}
+
+.close {
+  color: $textInput;
+}
+
+.close:hover {
+  color: $textInput;
+}
+
+.btn-default {
+
+}
+
+.btn {
+  background-color: $primary;
+  color: $text;
+  border: 0px solid;
+}
+
+.btn-default {
+  background-color: $primary;
+  color: $text;
+}
+
+.btn-default:hover {
+  background-color: $primaryLight;
+  color: #fff;
+}
+
+.btn-primary {
+  color: $text;
+  background-color: $primary;
+  border: 1px solid $outline;
+}
+
+.btn-primary:hover {
+  background-color: $primaryLight;
+  border: 1px solid $outlineLight;
+}
+
+.btn-primary:active .btn-primary:focus {
+  background-color: $primaryDark;
+  border: 1px solid $outlineDark;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+}

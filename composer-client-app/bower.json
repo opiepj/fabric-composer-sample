@@ -1,0 +1,18 @@
+{
+  "name": "composer-client-app",
+  "description": "Blockchain Academy fabric composer application",
+  "main": "index.js",
+  "authors": [
+    "Patrick Opie patrick.opie@accenture.com"
+  ],
+  "license": "Apache2",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

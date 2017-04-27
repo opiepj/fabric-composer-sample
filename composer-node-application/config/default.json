@@ -1,0 +1,8 @@
+{
+  "composer-node-application" : {
+     "participantId" : "WebAppAdmin",
+     "participantPwd" :"DJY27pEnl16d",
+     "businessNetworkIdentifier" : "accenture-network",
+     "connectionProfile" : "defaultProfile"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "accenture-network",
+  "version": "1.0.0",
+  "description": "Blockchain Academy Accenture Fabric Network",
+  "scripts": {
+    "preinstall": "composer --version || echo 'Please first run npm install -g composer-cli' ",
+    "install": "./scripts/download-hyperledger.sh && ./scripts/start-hyperledger.sh && npm run deployNetwork",
+    "archive": "composer archive create --archiveFile digitalLandTitle.bna --sourceType dir --sourceName .",
+    "update": "composer network update --archiveFile  digitalLandTitle.bna  --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d",
+    "list": "composer network list -n accenture-network -i WebAppAdmin",
+    "prepublish": "mkdir -p ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/digitalLandTitle.bna",
+    "deployNetwork": "npm run prepublish && composer network deploy --archiveFile ./dist/digitalLandTitle.bna  --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d && composer network list -n accenture-network --enrollId WebAppAdmin --enrollSecret DJY27pEnl16d",
+    "pretest": "npm run lint",
+    "lint": "eslint .",
+    "postlint": "npm run licchk",
+    "licchk": "license-check",
+    "postlicchk": "npm run doc",
+    "doc": "jsdoc --pedantic --recurse -c jsdoc.conf",
+    "test": "mocha --recursive",
+    "deploy": "./scripts/deploy.sh"
+  },
+  "dependencies": {
+    "composer-cli": "latest"
+  },
+  "author": "",
+  "license": "ISC"
+}

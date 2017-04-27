@@ -1,0 +1,26 @@
+<!--<ul class="nav">-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" [routerLink]="['/']">Link</a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a class="nav-link disabled" [routerLink]="['/']">Disabled</a>-->
+<!--</li>-->
+<!--</ul>-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/home']">Fabric Composer Demo</a>
+    </div>
+
+      <ul class="nav">
+
+        <li class="nav-item" *ngFor="let item of items"><app-navbar-item [item]="item"></app-navbar-item></li>
+      </ul>
+  </div>
+</nav>
